@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.dhiwise.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.dhiwise.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp">
+        <activity
+            android:name="com.dhiwise.app.modules.loginlight.ui.LoginLightActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dhiwise.app.modules.socialchatlight.ui.SocialChatLightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.dhiwise.app.modules.socialhomelight.ui.SocialHomeLightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.dhiwise.app.modules.socialcommentslight.ui.SocialCommentsLightActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

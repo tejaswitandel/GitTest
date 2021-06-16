@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginLightVM" type="com.dhiwise.app.modules.loginlight.data.viewmodel.LoginLightVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <ImageView android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_44px"
+            android:layout_marginTop="@dimen/_92px"
+            android:layout_width="@dimen/_37px" android:src="@drawable/_9659472b4e244f066695c875e53ef44c"/>
+        <TextView android:fontFamily="@font/sf_pro_display"
+            android:gravity="top|start"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_35px"
+            android:layout_width="match_parent"
+            android:text="@string/lbl_login"
+            android:textColor="@color/black_900"
+            android:textFontWeight="700" android:textSize="@dimen/_34px" android:textStyle="bold"/>
+        <TextView android:fontFamily="@font/sf_pro_text"
+            android:gravity="top|start"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@string/msg_welcome_back_s"
+            android:textColor="@color/gray_800"
+            android:textFontWeight="400" android:textSize="@dimen/_17px" android:textStyle="normal"/>
+        <EditText android:hint="@string/lbl_email"
+            android:id="@+id/etEmail"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40px"
+            android:layout_width="match_parent" android:textColorHint="@color/#ff3c3c43"/>
+        <FrameLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <EditText android:hint="@string/lbl_password"
+                android:id="@+id/etPassword"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:textColorHint="@color/#ff3c3c43"/>
+            <TextView android:fontFamily="@font/sf_pro_text"
+                android:gravity="top|start"
+                android:layout_gravity="center|end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16px"
+                android:layout_width="wrap_content"
+                android:text="@string/msg_forgot_password"
+                android:textColor="@color/light_blue_A700"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_13px" android:textStyle="bold"/>
+        </FrameLayout>
+        <TextView
+            android:background="@drawable/rectangle_bg_light_blue_a700_border_black_900_radius_14"
+            android:fontFamily="@font/sf_pro_text"
+            android:gravity="top|start"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_206px"
+            android:layout_width="match_parent"
+            android:paddingStart="@dimen/_16px"
+            android:paddingTop="@dimen/_19px"
+            android:text="@string/lbl_sign_in"
+            android:textColor="@color/white_A700"
+            android:textFontWeight="600" android:textSize="@dimen/_17px" android:textStyle="bold"/>
+        <TextView android:fontFamily="@font/sf_pro_text"
+            android:gravity="top|start"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_29px"
+            android:layout_width="match_parent"
+            android:text="@string/msg_don_t_have_an"
+            android:textColor="@color/black_300"
+            android:textFontWeight="400" android:textSize="@dimen/_15px" android:textStyle="normal"/>
+    </LinearLayout>
+</layout>
