@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="socialHomeLightRowModel" type="com.dhiwise.app.modules.socialhomelight.data.model.SocialHomeLightRowModel"/>
+    </data>
+    <FrameLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <ImageView android:layout_gravity="center"
+            android:layout_height="@dimen/_160px"
+            android:layout_width="@dimen/_200px"
+            android:scaleType="fitCenter" imageRes="@{@drawable/_2d939906cf8eb1063ca89fd2686417bf11a8d2ad}"/>
+        <LinearLayout android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <TextView android:fontFamily="@font/sf_pro_text"
+                    android:gravity="top|start"
+                    android:id="@+id/txt6473"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@{socialHomeLightRowModel.lbl6473}"
+                    android:textColor="@color/white_A700"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_13px" android:textStyle="normal"/>
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_marginStart="@dimen/_6px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/_28fa98cb7077e2d8229b4a7f43632e2d"/>
+            </LinearLayout>
+            <TextView android:clickable="true"
+                android:fontFamily="@font/sf_pro_text"
+                android:gravity="top|start"
+                android:id="@+id/txtHotAirBalloon"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4px"
+                android:layout_marginTop="@dimen/_86px"
+                android:layout_width="match_parent"
+                android:text="@{socialHomeLightRowModel.lblHotAirBalloon}"
+                android:textColor="@color/white_A700"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_17px" android:textStyle="bold"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

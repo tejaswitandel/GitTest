@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="socialHomeLightVM" type="com.dhiwise.app.modules.socialhomelight.data.viewmodel.SocialHomeLightVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <FrameLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <ImageView android:layout_gravity="center"
+                android:layout_height="@dimen/_192px"
+                android:layout_width="@dimen/_375px" imageRes="@{@drawable/_d29f3a297ceb1621afb47cf1cb2db608}"/>
+            <LinearLayout android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:layout_gravity="start"
+                    android:layout_height="@dimen/_44px"
+                    android:layout_width="@dimen/_188px" android:src="@drawable/_7e935b625bdc4850790a3b56cde32bde"/>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16px"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:fontFamily="@font/sf_pro_display"
+                        android:gravity="top|start"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_my_posts"
+                        android:textColor="@color/black_900"
+                        android:textFontWeight="700"
+                        android:textSize="@dimen/_34px" android:textStyle="bold"/>
+                    <ImageView android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_34px"
+                        android:layout_width="@dimen/_34px"
+                        android:scaleType="fitCenter" android:src="@drawable/_3256760c2dab14ef0acec07a6420889d7d205fcf"/>
+                </LinearLayout>
+                <FrameLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14px" android:layout_width="match_parent">
+                    <EditText
+                        android:background="@drawable/rectangle_bg_gray_600"
+                        android:fontFamily="@font/sf_pro_text"
+                        android:gravity="top|start"
+                        android:hint="@string/lbl_search"
+                        android:id="@+id/etSearch"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingStart="@dimen/_30px"
+                        android:paddingTop="@dimen/_7px"
+                        android:textColor="@color/gray_800"
+                        android:textColorHint="@color/#ff3c3c43"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_17px" android:textStyle="normal"/>
+                    <ImageView android:layout_gravity="center|start"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginStart="@dimen/_22px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/_019d44cbf2ca855d455fd9e9c7512b78"/>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12px"
+            android:layout_marginTop="@dimen/_24px"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="2" tools:listitem="@layout/row_social_home_light"/>
+        <TextView android:fontFamily="@font/sf_pro_display"
+            android:gravity="top|start" android:id="@+id/txtOtherPosts"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12px"
+            android:layout_marginTop="@dimen/_40px"
+            android:layout_width="match_parent"
+            android:text="@string/lbl_other_posts"
+            android:textColor="@color/black_900"
+            android:textFontWeight="700" android:textSize="@dimen/_22px" android:textStyle="bold"/>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_28px"
+            android:layout_marginTop="@dimen/_32px"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.72"
+                        android:layout_width="0dp" android:orientation="horizontal">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_40px"
+                            android:layout_width="@dimen/_40px"
+                            android:scaleType="fitCenter"
+                            circular="@{true}" imageRes="@{@drawable/_d4032187921a43b9d248d443bc05cbd691bd2db2}"/>
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12px"
+                            android:layout_weight="0.82"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <TextView
+                                android:fontFamily="@font/sf_pro_text"
+                                android:gravity="top|start"
+                                android:id="@+id/txtCameronSteward"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:text="@string/lbl_cameron_steward"
+                                android:textColor="@color/black_900"
+                                android:textFontWeight="600"
+                                android:textSize="@dimen/_15px" android:textStyle="bold"/>
+                            <TextView
+                                android:fontFamily="@font/sf_pro_text"
+                                android:gravity="top|start"
+                                android:id="@+id/txt2HoursAgo"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2px"
+                                android:layout_width="match_parent"
+                                android:text="@string/lbl_2_hours_ago"
+                                android:textColor="@color/gray_800"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/_12px" android:textStyle="normal"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:background="@drawable/rectangle_border_light_blue_a700_radius_8"
+                        android:clickable="true"
+                        android:fontFamily="@font/sf_pro_text"
+                        android:gravity="top|start"
+                        android:id="@+id/txtFollow"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_24px"
+                        android:layout_weight="0.28"
+                        android:layout_width="0dp"
+                        android:paddingStart="@dimen/_12px"
+                        android:paddingTop="@dimen/_8px"
+                        android:text="@string/lbl_follow"
+                        android:textColor="@color/light_blue_A700"
+                        android:textFontWeight="600"
+                        android:textSize="@dimen/_12px" android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20px"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <TextView android:fontFamily="@font/sf_pro_text"
+                        android:gravity="top|start"
+                        android:id="@+id/txtArchitecture"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/msg_architecture"
+                        android:textColor="@color/light_blue_A700"
+                        android:textFontWeight="600"
+                        android:textSize="@dimen/_12px" android:textStyle="bold"/>
+                    <TextView android:fontFamily="@font/sf_pro_text"
+                        android:gravity="top|start"
+                        android:id="@+id/txtSedAffertDele"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:text="@string/msg_sed_affert_dele"
+                        android:textColor="@color/black_900"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_15px" android:textStyle="normal"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12px"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_148px"
+                    android:layout_width="@dimen/_148px"
+                    android:scaleType="fitCenter" circular="@{true}" imageRes="@{@drawable/_919dfe070a7b92a83ce4c9098c0111f7d6e20052}"/>
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_148px"
+                    android:layout_marginStart="@dimen/_15px"
+                    android:layout_width="@dimen/_148px"
+                    android:scaleType="fitCenter" circular="@{true}" imageRes="@{@drawable/_a7333a7bfc017513d886c92b12e3ee9d1afc773c}"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

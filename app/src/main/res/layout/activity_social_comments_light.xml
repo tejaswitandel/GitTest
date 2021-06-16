@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="socialCommentsLightVM" type="com.dhiwise.app.modules.socialcommentslight.data.viewmodel.SocialCommentsLightVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <FrameLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <ImageView android:layout_gravity="center"
+                android:layout_height="@dimen/_88px"
+                android:layout_width="@dimen/_375px" imageRes="@{@drawable/_0060f0ead138c087eb2cb43d0d56b731}"/>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+                android:layout_height="wrap_content" android:layout_width="match_parent">
+                <FrameLayout android:layout_gravity="bottom|center"
+                    android:layout_height="@dimen/_44px" android:layout_width="match_parent">
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:fontFamily="@font/sf_pro_text"
+                        android:layout_gravity="center|start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/lbl_back"
+                        android:textColor="@color/light_blue_A700"
+                        android:textFontWeight="400" android:textSize="@dimen/_17px"/>
+                    <FrameLayout android:layout_gravity="center"
+                        android:layout_height="wrap_content" android:layout_width="match_parent">
+                        <ImageView android:layout_gravity="center|end"
+                            android:layout_height="@dimen/_44px"
+                            android:layout_width="@dimen/_188px" android:src="@drawable/_479d038e239989a6cf987d5d247ea7ec"/>
+                        <TextView android:fontFamily="@font/sf_pro_text"
+                            android:gravity="top|start"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:paddingStart="@dimen/_16px"
+                            android:paddingTop="@dimen/_12px"
+                            android:text="@string/lbl_hot_air_balloon"
+                            android:textColor="@color/black_900"
+                            android:textFontWeight="600"
+                            android:textSize="@dimen/_17px" android:textStyle="bold"/>
+                    </FrameLayout>
+                </FrameLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </FrameLayout>
+        <ImageView android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_274px"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="@dimen/_343px"
+            android:scaleType="fitCenter" imageRes="@{@drawable/_2d939906cf8eb1063ca89fd2686417bf11a8d2ad}"/>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_12px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_20px"
+                android:layout_width="@dimen/_20px" android:src="@drawable/_285ab6c78c96661655fb3e33877a37ec"/>
+            <TextView android:fontFamily="@font/sf_pro_text"
+                android:gravity="top|start"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6px"
+                android:layout_weight="0.11" android:layout_width="0dp"
+                android:text="@string/lbl_8563"
+                android:textColor="@color/gray_800"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12px" android:textStyle="normal"/>
+            <TextView android:fontFamily="@font/sf_pro_text"
+                android:gravity="top|start"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07" android:layout_width="0dp"
+                android:text="@string/lbl_342"
+                android:textColor="@color/gray_800"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12px" android:textStyle="normal"/>
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_20px"
+                android:layout_marginStart="@dimen/_4px"
+                android:layout_width="@dimen/_20px" android:src="@drawable/_b615a3aecfe72e0eacacb807a8e7bf1e"/>
+            <TextView android:fontFamily="@font/sf_pro_text"
+                android:gravity="top|start"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24px"
+                android:layout_weight="0.16" android:layout_width="0dp"
+                android:text="@string/lbl_6473"
+                android:textColor="@color/gray_800"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12px" android:textStyle="normal"/>
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_20px"
+                android:layout_marginStart="@dimen/_4px"
+                android:layout_width="@dimen/_20px" android:src="@drawable/_0deb515b16072a4c798226d4d8c8615f"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_1px"
+            android:layout_marginTop="@dimen/_12px"
+            android:layout_width="match_parent" android:src="@drawable/_2e992f799e9eaac92321d7e460959c05"/>
+        <TextView android:fontFamily="@font/sf_pro_display"
+            android:gravity="top|start"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_24px"
+            android:layout_width="match_parent"
+            android:text="@string/lbl_comments"
+            android:textColor="@color/black_900"
+            android:textFontWeight="700" android:textSize="@dimen/_22px" android:textStyle="bold"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24px"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="2" tools:listitem="@layout/row_social_comments_light"/>
+    </LinearLayout>
+</layout>

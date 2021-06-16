@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="socialCommentsLightRowModel" type="com.dhiwise.app.modules.socialcommentslight.data.model.SocialCommentsLightRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_40px"
+                    android:layout_width="@dimen/_40px"
+                    android:scaleType="fitCenter" circular="@{true}" imageRes="@{@drawable/_4d3db4e984576fee9310f752ced4a2fa6f8470d5}"/>
+                <LinearLayout android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_weight="0.88"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:fontFamily="@font/sf_pro_text"
+                        android:gravity="top|start"
+                        android:id="@+id/txtJorgeWatson"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{socialCommentsLightRowModel.lblJorgeWatson}"
+                        android:textColor="@color/black_900"
+                        android:textFontWeight="600"
+                        android:textSize="@dimen/_15px" android:textStyle="bold"/>
+                    <TextView android:fontFamily="@font/sf_pro_text"
+                        android:gravity="top|start"
+                        android:id="@+id/txt2HoursAgo"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2px"
+                        android:layout_width="match_parent"
+                        android:text="@{socialCommentsLightRowModel.lbl2HoursAgo}"
+                        android:textColor="@color/gray_800"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12px" android:textStyle="normal"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12px"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:fontFamily="@font/sf_pro_text"
+                    android:gravity="top|start"
+                    android:id="@+id/txtEumDictaFuiss"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{socialCommentsLightRowModel.lblEumDictaFuiss}"
+                    android:textColor="@color/black_900"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_15px" android:textStyle="normal"/>
+                <TextView android:fontFamily="@font/sf_pro_text"
+                    android:gravity="top|start"
+                    android:id="@+id/txtReply"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12px"
+                    android:layout_width="match_parent"
+                    android:text="@{socialCommentsLightRowModel.lblReply}"
+                    android:textColor="@color/light_blue_A700"
+                    android:textFontWeight="600"
+                    android:textSize="@dimen/_13px" android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_1px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="@dimen/_375px" android:src="@drawable/_6f84090e49ee78900f2423057a5689a1"/>
+    </LinearLayout>
+</layout>
